@@ -1,0 +1,13 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for information about weeding attendance limit
+  steps:
+  - intent: ask_allowed_gatherings
+    entities: 
+    - place
+  - slot_was_set:
+    - place: weeding
+  - action: utter_weeding_attendance_limit

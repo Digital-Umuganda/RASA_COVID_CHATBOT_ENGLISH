@@ -1,0 +1,16 @@
+
+version: "2.0"
+
+nlu:
+
+- intent: ask_allowed_gatherings
+  example: |
+    - what [event](place) can I attent to on [weekends](time)?
+    - can I go to [church](place)?
+    - can I attent a [weeding](place)?
+    - am I allowed to go to a [meeting](place) in [Remera](location)?
+    - where can [eat](place) in [Gasabo](location)?
+    - are [gyms](place) opened?
+    - is it ok to go to a [hotel](place)?
+    - how many people can attend a [weeding](place)
+    - how many people can you receive at a [restaurant](place)

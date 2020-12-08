@@ -1,0 +1,66 @@
+
+version: "2.0"
+
+intents:
+- ask_home_quarantine:
+    use_entities: 
+      - place
+- ask_home_quarantine_process:
+    use_entities: 
+      - place
+- ask_covid:
+    use_entities:
+      - covid
+
+
+responses:
+#patientQuarantine.yml
+  utter_home_patient_quarantine_policy:
+  - text: "The household must allow the patients to isolate from other household members"
+  - text: "Do not leave your home"
+  - text: "Follow all prevention measures"
+  - text: "Avoid having visitors in the home"
+  - text: "Do not share dishes, cutlery, towels or other personal items"
+  - text: "Isolation from other household members"
+  - text: "Follow advice given by the medical team"
+  - text: "In case of emergency, the patient should immediately call 114 , a medical team will be dispatched and the patient will be admitted in the treatment centers for close follow up"
+
+  utter_home_patient_quarantine_process:
+  - text: "Asymptomatic patient or patients with mild symptoms and patients without preexisting chronic conditions are admitted in home based care on their consent"
+  - text: "A tracking bracelet is attached to the patient leg that sends an alert each time the patient is out of his radius. Appropriate measures may then be taken."
+
+
+#hygiene.yml
+responses:
+  utter_covid_transmission:
+  - text: "COVID-19 is mainly transmitted through contact with respiratory droplets from the nose or mouth and can spread from person-to-person when a person with COVID-19 coughs or exhales."
+  - text: "Droplets may land on objects or surfaces around an infected person and others may catch COVID-19 when touching objects or surfaces, followed by touching their eyes, nose or mouth."
+  - text: "It is possible for the virus to spread before exhibiting symptoms, however people are most contagious when they are symptomatic."
+
+#symptoms.yml
+  utter_covid_symptoms:
+  - text: "The two most common symptoms are fever (88 percent) and dry cough (68 percent)."
+  - text: "Approximately one in five may become more seriously ill and have difficulty in breathing."
+  - text: "Emergency symptoms include difficulty breathing, persistent chest pain or pressure, sudden confusion, difficulty waking, and bluish face or lips."
+  - text: "Further development of the disease can lead to complications including pneumonia, acute respiratory distress syndrome, sepsis, septic shock, and kidney failure."
+  - text: "The likely order of initial symptoms of the COVID-19 disease is a fever followed by a cough and muscle pain, and that nausea and vomiting usually appear before diarrhoea. This contrasts with the most common path for influenza where it is common to develop a cough first and fever later"
+
+
+#testing.yml
+  utter_covid_testing_locations:
+  - text: "Diagnostic testing is currently being conducted in public health laboratories with a test kit. Some mobile units are usually available in areas where risk of infection are high."
+  
+
+#treatment.yml
+  utter_covid_treament:
+  - text: "There is no vaccine and no medicine currently available to prevent or treat COVID-19. Those affected are treated with supportive care to relieve symptoms."
+  - text: "If you are experiencing any signs and symptoms, seek medical attention immediately."
+
+  utter_covid_medication:
+  - text: "There is no vaccine and no medicine currently available to prevent or treat COVID-19. Those affected are treated with supportive care to relieve symptoms."
+
+  utter_covid_vaccine:
+  - text: "There is no vaccine and no medicine currently available to prevent or treat COVID-19. Those affected are treated with supportive care to relieve symptoms."
+
+  utter_covid_treament_fee:
+  - text: "Covid-19 patient are treated free of charge."

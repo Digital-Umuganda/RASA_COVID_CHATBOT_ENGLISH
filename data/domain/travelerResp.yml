@@ -1,0 +1,33 @@
+
+version: "2.0"
+
+intents:
+- ask_traveler:
+    use_entities:
+      - travel
+      - time
+
+
+responses:
+#travelling/travelers.yml
+  utter_traveler_curfew_policy:
+  - text: "If a traveler arrives/depart in/from Rwanda after curfew they may request a pass for someone to drive them at/to the airport or contact the hotel they are staying in to handle transportation from the airport"
+  
+  utter_traveler_testing_facilities:
+  - text: "At Remera Petit stade."
+  - text: "And at Gikondo Juakali."
+  
+  utter_traveler_requirement:
+  - text: "Incoming passengers are required to fill in a passenger locator form on RBC website."
+  - text: "Arriving and departing passengers at Kigali International airport must present a negative COVID -19 PCR test taken within 120 hours prior to departure and should comply with health guidelines."
+  - text: "Land borders are still closed until further notice."
+  
+  utter_traveler_quarantine:
+  - text: "Once in Rwanda a second test will be administered and will be hosted in a transit hotel for 24 hours."
+  - test: "If the test results are negative the passenger is free to continue, if the test results are positive medical team will admit the passenger to home based care or treatment center based on their assessment."
+
+
+#travelling/quaratineHotels.yml
+  utter_traveler_quarantine_hotel_cost:
+  - text: "The Government of Rwanda has negotiated special rates at designated transit hotels for the 24 hour waiting period."
+  - text: "Should a guest wish to remain in the hotel after receiving negative test results, they are welcome to extend their stay at the hotel’s applicable rates."

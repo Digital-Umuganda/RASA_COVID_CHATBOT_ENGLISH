@@ -1,0 +1,63 @@
+
+version: "2.0"
+
+nlu:
+
+- intent: ask_covid
+  example: |
+    - how is covid [transmitted](covid)?
+    - how many people have [recovered](covid) from covid?
+    - how many people [cases](covid) of covid are there?
+    - how is covid [tested](covid)?
+    - how can I get [tested](covid) of covid?
+    - how much time will I have to wait for [test](covid) results?
+    - what kind of covid [test](covid) should I take?
+    - what is [SARS-Cov test](covid)?
+    - what is [RDT test](covid) mean?
+    - how can I get [treated](covid) from covid?
+    - how is covid [treated](covid)?
+    - how long does it take to [heal](covid) from covid?
+    - is there a [cure](covid) for covid?
+    - is there a [vaccine](covid) for covid?
+    - how much does it [cost](covid) too get treated for covid
+    - what are the [symptoms](covid) of covid?
+    - how do I know if I have [covid](covid)?
+
+- synonym: transmission
+  examples: |
+    - transmitted
+
+- synonym: cases
+  examples: |
+    - recovered
+    - infected
+    - positive
+    - negative
+
+- synonym: testing
+  examples: |
+    - tests
+    - test
+    - SARS-Cov test
+    - RDT test
+    - tested
+
+- synonym: treatment
+  examples: |
+    - treated
+    - heal
+
+- synonym: medication
+  examples: |
+    - medecine
+    - cure
+    - drugs
+
+- synonym: fee
+  examples: |
+    - cost
+
+- synonym: symptoms
+  examples: |
+    - sign
+    - covid

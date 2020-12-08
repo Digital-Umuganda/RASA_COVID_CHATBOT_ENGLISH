@@ -1,0 +1,59 @@
+
+version: "2.0"
+
+nlu:
+
+- intent: ask_traveler
+  example: |
+    - will I be [quarantined](travel) when I arrive to Rwanda?
+    - how long is the [quarantine](travel)?
+    - will I be [tested](travel) again upon arrival?
+    - where is the [quarantine](travel) held for travelers?
+    - what will happen after the [quarantine](travel) period?
+    - what will happen if I [test](travel) positive?
+    - can I [travel](travel) outside the country?
+    - can I [travel](travel) outside kigali?
+    - is it okay to [travel](travel) outside the country?
+    - can we [travel](travel) outside the country?
+    - which countries can I [travel](travel) to?
+    - how can I get [tested](travel) before a flight?
+    - how can I [travel](travel) if my flight is after [curfew](time)?
+    - what process do I need to follow to [travel](travel) outside the country?
+    - what process do I need to complete to [travel](travel) outside the country?
+    - what is the process do I need to follow to [travel](travel) outside the country?
+    - what do I need to [travel](travel) outside the country?
+    - what do I need to do in order to [travel](travel)?
+    - what is the required process involved in out of the country [travel](travel)?
+    - what [hotels](travel) can I stay in during quarantine?
+    - can I get out of the [hotel](travel) during quarantine?
+    - do you offer discounts on [hotels](travel) during quarantine?
+    - can choose which [hotel](travel) I am staying in during quarantine?
+    - what can I do in the [hotel](travel) I am staying in during quarantine?
+    - where do travelers get [tested](travel) after arrival?
+    - what happens after I get [tested](travel)?
+    - where can I get [tested](travel) before travelling?
+    - what happens if I am [transiting](travel) in Rwanda?
+    - where can I get more [help](travel)?
+    - where can I find more [help](travel)?
+
+- synonym: quarantine
+  examples: |
+    - quarantined
+    - confinment
+    - confined
+
+- synonym: travel
+  examples: |
+    - travelling
+    - trip
+    - flight
+    - trips
+    - flights
+
+- synonym: hotel
+  examples: |
+    - hotels
+
+- synonym: transit
+  examples: |
+    - transitting

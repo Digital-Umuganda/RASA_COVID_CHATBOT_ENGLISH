@@ -1,0 +1,13 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for information about events allowed to be held in a church
+  steps:
+  - intent: ask_allowed_gatherings
+    entities: 
+    - place
+  - slot_was_set:
+    - place: church
+  - action: utter_church_allowed_events

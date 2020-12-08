@@ -1,0 +1,22 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for information about funeral attendance limit
+  steps:
+  - intent: ask_allowed_gatherings
+    entities: 
+    - place
+  - slot_was_set:
+    - place: funeral
+  - action: utter_funeral_attendance_limit
+
+- story: looking for information about funeral policy transgression
+  steps:
+  - intent: ask_transgression
+    entities: 
+    - policy
+  - slot_was_set:
+    - policy: attendance
+  - action: utter_funeral_policy_transgression

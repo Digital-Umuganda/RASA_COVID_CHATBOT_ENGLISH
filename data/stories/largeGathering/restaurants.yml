@@ -1,0 +1,31 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for information about restaurant allowed services
+  steps:
+  - intent: ask_allowed_gatherings
+    entities: 
+    - place
+  - slot_was_set:
+    - place: restaurant
+  - action: utter_restaurant_allowed_services
+
+- story: looking for information about restaurant attendance limit
+  steps:
+  - intent: ask_allowed_gatherings
+    entities: 
+    - place
+  - slot_was_set:
+    - place: restaurant
+  - action: utter_restaurant_attendance_limit
+
+- story: looking for information about restaurant hygiene policy
+  steps:
+  - intent: ask_allowed_gatherings
+    entities: 
+    - place
+  - slot_was_set:
+    - place: restaurant
+  - action: utter_restaurant_hygiene_policy

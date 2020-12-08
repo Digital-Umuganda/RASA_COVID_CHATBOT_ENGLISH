@@ -1,0 +1,68 @@
+
+version: "2.0"
+
+intents:
+- ask_allowed_gatherings:
+    use_entities: 
+      - place
+      - location
+      - time
+
+
+responses:
+#largeGathering/churches.yml
+  utter_church_allowed_events:
+  - text: "Weedings, funerals are allowed as long as their do not execeed 75 people."
+  - text: "Masses are allowed only if the church is following COVID19 preventive measures and has been allowed to operate by Minaloc."
+  - text: "Services at places of worship will host up to 50% of venue capacity."
+
+#largeGathering/markets.yml
+  utter_market_policy:
+  - text: "Malls and markets will operate at 50% capacity with vendors working on a rotational basis."
+
+
+#largeGathering/funerals.yml
+  utter_funeral_attendance_limit:
+  - text: "Funerals are allowed as long as their do not execeed 75 people in church and cimeteries gathering."
+  - text: "And 15 people in wake/vigil at any one time."
+  
+  utter_funeral_policy_transgression:
+  - text: "The cemetery service officials will pay a fine of Rwf 25,000 if they allow an exceeding number of people who are allowed at a burial ceremony."
+
+#largeGathering/hotels.yml  
+  utter_hotel_open_facilities:
+  - text: "Most facilities are opened for hotel clients if the appropriate COVID19 prevention measures can be put in place but these facilities remain closed to the public."
+  
+
+
+#largeGathering/meetings.yml
+  utter_meeting_attendance_limit:
+  - text: "Mass gathering are prohibited except with special permission and events must not exceed 30% of venue capacity. Applications to host essential events will be granted by local authorities and RDB upon fulfillment of health requirements."
+  
+  utter_meeting_requirement:
+  - text: "Participants in meetings and conferences will not require proof of COVID – 19 tests however, event organizers must comply with health guidelines and must not exceed 50% of venue capacity."
+  - text: "Event organizers including conferences and meetings must comply with all COVID – 19 preventive measures."
+  
+
+
+#largeGathering/restaurants.yml
+  utter_restaurant_allowed_services:
+  - text: "All bars including those in restaurants and hotels will remain closed."
+
+  utter_restaurant_attendance_limit:
+  - text: "As long as restaurant respect distancing rules, they are free to operate at 50% of the venue capacity."
+
+  utter_restaurant_hygiene_policy:
+  - text: "The proprietors of commercial buildings will have to pay Rwf 300,000 fine."
+  - text: "And the restaurant(if they are renting the building) will pay Rwf 50,000 if they equally don’t have such hygiene required facilities and may be closed for up to 3 months."
+
+
+#largeGathering/weedings.yml
+  utter_weeding_attendance_limit:
+  - text: "Church wedding ceremonies should not exceed 75 persons."
+  
+
+#largeGathering/workOuts.yml
+  utter_workOut_policy:
+  - text: "Non-contact outdoor sports are permitted however gyms shall remain closed."
+  - text: "Gym and Swimming pools remain closed."

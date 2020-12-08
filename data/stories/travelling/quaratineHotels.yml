@@ -1,0 +1,13 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for information about traveler quaratine hotel cost
+  steps:
+  - intent: ask_traveler
+    entities: 
+    - travel
+  - slot_was_set:
+    - travel: hotel
+  - action: utter_traveler_quarantine_hotel_cost

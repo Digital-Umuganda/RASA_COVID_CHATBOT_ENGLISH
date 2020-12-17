@@ -1,0 +1,90 @@
+
+version: "2.0"
+
+nlu:
+
+- intent: ask_pharmacy_facility
+  examples: |
+    - can I see a map of nearby [pharmacies](place)
+    - where can I find a [pharmacy](place) in [kimironko](location)
+    - where can I find a [pharmacy](place) [nearby](location)
+    - do you know if there is a [pharmacy](place) area around [here](location)
+
+- intent: ask_health_facility
+  examples: |
+    - where can I find a [health](place) institution [near me](location)
+    - is there a [health](place) facility [nearby](location)
+    - can I see a map of local [health](place) facilities?
+
+- intent: ask_covid_hospitals
+  examples: |
+    - where can I find a [hospital](place) [nearby](location)
+    - is there any covid [hospital](place) in [kimironko](location)
+    - where can I find a [covid](disease) [treatment facility](place) in [kigali](location)
+
+- intent: ask_covid_patient_quarantine_facility
+  examples: |
+    - do you know if there is a [quarantine](place) area around [here](location)
+    - do you have a map of all [quarantine](place) facilities [in the area](location)?
+
+- intent: ask_covid_treatment_locations
+  examples: |
+    - do you know if there are any [confinment](place) area in the [eastern province](location)
+    - do you know where [covid](disease) patient are quarantined in [kigali](location)
+
+- intent: ask_covid_health_facility
+  examples: |
+    - do you have a map of all covid [testing](place) facilities [in the area](location)?
+    - can I see a map of local covid [health](place) facilities?
+    
+- intent: ask_home_patient_quarantine_policy
+  examples: |
+    - what are the requirement of a [home](place) [quarantine](place)
+    - what requirement does a [household](place) [quarantine](place) follow
+    - can I go to the market if I am in [household](place) [quarantine](place)
+    - how do I [quaratine](place) myself from [home](place)
+    - what do I need to [quarantine](place) [myself](place)
+
+- intent: ask_home_patient_quarantine_process
+  examples: |
+    - how is [home](place) [quarantine](place) done
+    - how does [household](place) [quarantine](place) work
+
+- intent: ask_home_patient_quarantine_emergency
+  examples: |
+    - what do I do in case of emergency
+    - who do I call in case of emergency
+
+- intent: ask_covid_treatment
+  examples: |
+    - how is covid treated
+    - can covid be treated
+
+- intent: ask_covid_treatment_duration
+  examples: |
+    - how long does it take to heal from covid
+    - how long are covid patient quarantined
+    
+- intent: ask_covid_patient_quarantine
+  examples: |
+    - can covid patient receive visitors?
+    - who are covid patient cared for in quarantine
+    
+- intent: ask_covid_medication
+  examples: |
+    - is there a covid19 cure
+    - where can I find covid medecine
+    
+- intent: ask_covid_vaccine
+  examples: |
+    - what vaccine of covid are available
+    - is there a covid vaccine in rwanda?
+    
+- intent: ask_covid_treatment_fee
+  examples: |
+    - how much does covid treatment cost
+    - how much do I pay for covid treament
+
+- synonym: test
+  examples: |
+    - testing

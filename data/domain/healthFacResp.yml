@@ -1,0 +1,63 @@
+
+version: "2.0"
+
+intents:
+- ask_pharmacy_facility
+- ask_health_facility
+- ask_covid_hospitals
+- ask_covid_patient_quarantine_facility
+- ask_covid_treatment_locations
+- ask_covid_health_facility
+- ask_home_patient_quarantine_policy
+- ask_home_patient_quarantine_process
+- ask_home_patient_quarantine_emergency
+- ask_covid_treatment
+- ask_covid_treatment_duration
+- ask_covid_patient_quarantine
+- ask_covid_medication
+- ask_covid_vaccine
+- ask_covid_treatment_fee
+
+
+responses:
+#healthFacilities/patientQuarantine.yml
+  utter_home_patient_quarantine_policy:
+    - text: "The household must allow the patients to isolate from other household members
+      Do not leave your home\n
+      Follow all prevention measures\n
+      Avoid having visitors in the home\n
+      Do not share dishes, cutlery, towels or other personal items\n
+      Isolation from other household members\n
+      Follow advice given by the medical team\n"
+ 
+  utter_home_patient_quarantine_process:
+    - text: "Asymptomatic patient or patients with mild symptoms and patients without preexisting chronic conditions are admitted in home based care on their consent\n
+      A tracking bracelet is attached to the patient leg that sends an alert each time the patient is out of his radius. Appropriate measures may then be taken.\n"
+
+  utter_home_patient_quarantine_emergency: 
+    - text: "In case of emergency, the patient should immediately call 114 , a medical team will be dispatched and the patient will be admitted in the treatment centers for close follow up\n"
+  
+
+#healthFacilities/treatment.uml
+  utter_covid_treatment:
+    - text: "There is no vaccine and no medicine currently available to prevent or treat COVID-19. Those affected are treated with supportive care to relieve symptoms.\n
+      If you are experiencing any signs and symptoms, seek medical attention immediately.\n"
+
+  utter_covid_treatment_locations:
+    - text: "In Kigali covid-19 treatment centers are located in Gatenga and Kinyinya. Other provinces have their own treatment centers.\n"
+
+  utter_covid_treatment_duration:
+    - text: "Covid-19 patient treatment period varies but mild cases typically recover within two weeks, while those with severe or critical diseases may take three to six weeks to recover. Among those who have died, the time from symptom onset to death has ranged from two to eight weeks.\n
+      10% to 20% of people with COVID-19 will experience symptoms lasting longer than a month. A majority of those who were admitted to hospital with severe disease report long-term problems including fatigue and shortness of breath\n"
+
+  utter_covid_patient_quarantine:
+    - text: "Covid-19 patient are usually not allowed to receive any visitors.\n"
+
+  utter_covid_medication:
+    - text: "There is no vaccine and no medicine currently available to prevent or treat COVID-19. Those affected are treated with supportive care to relieve symptoms.\n"
+
+  utter_covid_vaccine:
+    - text: "There is no vaccine and no medicine currently available to prevent or treat COVID-19. Those affected are treated with supportive care to relieve symptoms.\n"
+
+  utter_covid_treatment_fee:
+    - text: "Covid-19 patient are treated free of charge.\n"

@@ -1,0 +1,54 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for pharmacies
+  steps:
+  - intent: ask_pharmacy_facility
+    entities: 
+    - place
+  - slot_was_set:
+    - place: pharmacy
+  - action: action_pharmacy_facility
+
+- story: looking for healthcare facility
+  steps:
+  - intent: ask_health_facility
+    entities: 
+    - place
+  - slot_was_set:
+    - place: health
+  - action: action_health_facility
+
+- story: looking for hospitals
+  steps:
+  - intent: ask_covid_hospitals
+    entities: 
+    - place
+  - slot_was_set:
+    - place: hospital
+  - action: action_covid_hospitals
+
+- story: looking for covid quarantine facility
+  steps:
+  - intent: ask_covid_patient_quarantine_facility
+    entities: 
+    - place
+  - slot_was_set:
+    - place: quarantine
+  - action: action_covid_patient_quarantine_facility
+
+- story: looking for information about covid treatment location
+  steps:
+  - intent: ask_covid_treatment_locations
+    entities: 
+    - place
+  - slot_was_set:
+    - place: treatment
+  - action: utter_covid_treatment_locations
+
+- story: looking for unspecified covid healthcare facility
+  steps:
+  - intent: ask_covid_health_facility
+  - action: action_covid_health_facility

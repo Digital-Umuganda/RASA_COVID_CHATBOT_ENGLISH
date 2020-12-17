@@ -1,0 +1,224 @@
+
+version: "2.0"
+
+nlu:
+
+    
+- intent:  ask_curfew_hours
+  examples: |
+    - At what [time](policy) should I go home?
+    - what is the [curfew](policy) policy?
+    - what are the [curfew](policy) hours?
+    - at what time is [curfew](policy) set to?
+    - is there a [time](policy) limit for [weeding](event)?
+    - what if I have an emergency [late](policy) at [night](time)?
+
+- intent:  ask_curfew_transgression
+  examples: |
+    - what happens if I [drive](event) home [late](policy) at [night](time)?
+    - can I [go to](policy) a [party](event) [late](policy) at [night](time)
+
+- intent: ask_covid_transmission
+  examples: |
+    - how is [covid](disease) [transmitted](covid)
+    - how can I [contract](covid) [covid](disease)?
+
+- intent: ask_hygiene_policy
+  examples: |
+    - how should I [wash](policy) my hands?
+    - which [sanitizer](policy) would you recommend?
+    - how can I [disinfect](policy) an area?
+    - how can I [disinfect](policy) a car?
+
+- intent: ask_hygiene_policy_transgression
+  examples: |
+    - what happens if I refuse to [wash](policy) my hands at a [supermarket](place)?
+    - what if I forgot my [sanitizer](policy) at home?
+
+- intent: ask_mask_policy
+  examples: |
+    - should I wear a [mask](policy) at a [party](event)?
+    - is it ok to remove a [mask](policy) in a [presentation](place)?
+
+- intent: ask_mask_policy_transgression
+  examples: |
+    - What If I forgot my [mask](policy) at home
+    - is there a [fine](policy) for not wearing a [mask](policy)
+    - is there a [punishment](policy) for not wearing a [mask](policy)
+
+- intent: ask_payment_policy
+  examples: |
+    - what [payment method](policy) should I offer
+    - how should my client [pay](policy)?
+
+- intent: ask_payment_policy_transgression
+  examples: |
+    - what if I don't have a alternative [payment](policy) system
+    - is there a fine for not receiving electronic [payment](policy)?
+
+- intent: ask_private_transport_carriage_limit
+  examples: |
+    - how [many people](people) can I [drive](event) in my car?
+    - how [many people](people) can I [drive](event) to a weeding(event)
+
+- intent: ask_private_transport_curfew_pass
+  examples: |
+    - what's the requirement of getting a [curfew](policy) [pass](policy)?
+    - how can I [drive](event) at [night](time)?
+
+- intent: ask_private_transport_curfew_transgression
+  examples: |
+    - what happens to my car if I am [driving](event) home [late](policy) at [night](time)?
+    - what is the fine for [driving](event) after [curfew](policy)
+
+- intent: ask_private_transport_mask_policy
+  examples: |
+    - what happens if I am [driving](event) without a [mask](policy)?
+    - what happens if I am [driving](event) someone that is not wearing a [mask](policy)
+
+- intent: ask_private_transport_distance_policy
+  examples: |
+    - Is there a [distance](policy) requirement inside a [car](place)?
+    - am I required to sit a [meter](policy) from someone else in a [car](place)
+
+- intent: ask_public_transport_policy
+  examples: |
+    - how [many people](people) can a bus carry?
+    - what happens if I take a bus without my mask?
+
+- intent: ask_public_transport_carrriage_limit
+  examples: |
+    - how [many people](people) can a [cab](place) [carry](policy)
+    - how [many people](people) can a [bus](place) [drive](policy)
+
+- intent: ask_public_transport_curfew_transgression
+  examples: |
+    - what happens if I [drive](event) my bus after curfew?
+    - what happens if I take a bus after curfew?
+
+- intent: ask_public_transport_mask_policy
+  examples: |
+    - is it mandatory to wear a [mask](policy) in a [bus](place) or a [cab](place)
+    - do I have to wear a [mask](policy) inside a [plane](place)
+
+- intent: ask_motocycle_policy_transgression
+  examples: |
+    - what's the [fine](policy) for not wearing a [mask](policy) on a [bike](place)?
+    - what happens to my [bike](place) if my passenger is not wearing a [mask](policy)?
+
+- intent: ask_covid_cases_stats
+  examples: |
+    - how many people are [infected](covid) by [covid](disease) in [Rwanda](location)
+    - how many people have [covid](covid) in [Europe](location)
+
+- intent: ask_covid_confinment_stats
+  examples: |
+    - how many people are [quarantined](covid) by [covid](disease) in [Rusizi](location)
+    - how many people are [confined](covid) at [home](place)
+
+- intent: ask_covid_symptoms
+  examples: |
+    - how do I know if I have [covid](disease)
+    - what are the severe [symptoms](covid) of [covid](disease)
+    - what are the mild [symptoms](covid) of [covid](disease)
+    - what are the [signs](covid) of [covid](disease)
+
+- intent: ask_covid_testing_locations
+  examples: |
+    - where can I get [tested](covid) of [covid](disease)
+    - where are the [testing](covid) centers in [kimironko](location)
+
+- intent: ask_covid_diagnosis
+  examples: |
+    - how is [covid](disease) diapnosed
+    - how do I diagnosed for [covid](disease)
+
+- intent: ask_covid_testing_duration
+  examples: |
+    - how long does it take to get [tested](covid) of [covid](disease)
+    - how long do I have to wait for my [covid](disease) [test](covid) results?
+
+- intent: ask_covid_test_requirement
+  examples: |
+    - what do I need to get a [covid](disease) [test](covid)
+    - are there requirements to get [tested](covid) of [covid](disease)?
+
+- intent: ask_covid_test_type
+  examples: |
+    - what kind of [test](covid) are used to diagnose [covid](disease)
+    - what is the difference between [sars-cov](testType) and [rdt](testType) [tests](covid)
+
+- intent: ask_covid_test_SARS-Cov
+  examples: |
+    - how is [SARS-Cov](testType) PCR [test](covid) performed?
+    - is [sars-cov](testType) [test](covid) an official [covid](disease) [test](covid)?
+
+- intent: ask_covid_test_RDT
+  examples: |
+    - how is [RDT](testType) [test](covid) performed?
+    - is [rapid diagnosis](testType) [test](covid) an official [covid](disease) [test](covid)?
+
+
+# - intent: ask_covid
+#   examples: |
+#     - how is covid [transmitted](covid)?
+#     - how many people have [recovered](covid) from covid?
+#     - how many people [cases](covid) of covid are there?
+#     - how is covid [tested](covid)?
+#     - how can I get [tested](covid) of covid?
+#     - how much time will I have to wait for [test](covid) results?
+#     - what kind of covid [test](covid) should I take?
+#     - what is [SARS-Cov test](covid)?
+#     - what is [RDT test](covid) mean?
+#     - how can I get [treated](covid) from covid?
+#     - how is covid [treated](covid)?
+#     - how long does it take to [heal](covid) from covid?
+#     - is there a [cure](covid) for covid?
+#     - is there a [vaccine](covid) for covid?
+#     - how much does it [cost](covid) too get treated for covid
+#     - what are the [symptoms](covid) of covid?
+#     - how do I know if I have [covid](covid)?
+
+
+- synonym: transmission
+  examples: |
+    - transmitted
+
+- synonym: cases
+  examples: |
+    - recovered
+    - infected
+    - positive
+    - negative
+
+- synonym: testing
+  examples: |
+    - tests
+    - test
+    - SARS-Cov test
+    - RDT test
+    - tested
+
+- synonym: treatment
+  examples: |
+    - treated
+    - heal
+
+- synonym: medication
+  examples: |
+    - medecine
+    - cure
+    - drugs
+
+- synonym: fee
+  examples: |
+    - cost
+
+- synonym: symptoms
+  examples: |
+    - sign
+    - covid
+
+- synonym: attendance
+  examples: |
+    - people

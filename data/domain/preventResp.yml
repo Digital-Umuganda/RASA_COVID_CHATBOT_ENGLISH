@@ -1,0 +1,210 @@
+
+version: "2.0"
+
+intents:
+- ask_curfew_hours
+- ask_curfew_transgression
+- ask_covid_transmission
+- ask_hygiene_policy
+- ask_hygiene_policy_transgression
+- ask_mask_policy
+- ask_mask_policy_transgression
+- ask_payment_policy
+- ask_payment_policy_transgression
+- ask_private_transport_carriage_limit
+- ask_private_transport_curfew_pass
+- ask_private_transport_curfew_transgression
+- ask_private_transport_mask_policy
+- ask_private_transport_distance_policy
+- ask_public_transport_policy
+- ask_public_transport_carrriage_limit
+- ask_public_transport_curfew_transgression
+- ask_public_transport_mask_policy
+- ask_motocycle_policy_transgression
+- ask_covid_cases_stats
+- ask_covid_confinment_stats
+- ask_covid_symptoms
+- ask_covid_testing_locations
+- ask_covid_diagnosis
+- ask_covid_testing_duration
+- ask_covid_test_requirement
+- ask_covid_test_type
+- ask_covid_test_SARS-Cov
+- ask_covid_test_RDT
+
+
+responses:
+#prevention/curfew.yml
+  utter_curfew_hours:
+    - text: "Movements are prohibited from 10 PM to 4 AM.\n"
+  
+  utter_curfew_transgression:
+    - text: "Movements after curfew are punished by spending the night in a confinment area.\n"
+
+
+#prevention/gatherings.yml
+  utter_public_gathering_policy:
+    - text: "Domestic and international tourism will continue however tourists must have valid 
+      reservations and possess valid negative COVID – 19 test results.\n
+      Mass gathering are prohibited except with special permission and events must not 
+      exceed 30% of venue capacity. Applications to host essential events will be granted 
+      by local authorities and RDB upon fulfillment of health requirements.\n
+      Gaming operators may resume activities gradually, upon fulfilling COVID-19 preventive 
+      measures. The Ministry of Trade and Industry will provided detailed guidelines.\n
+      All bars including those in restaurants and hotels will remain closed.\n"
+  
+  utter_public_gathering_attendance_limit:
+    - text: "Most approved events have a 75 person limit or 50% of the event venue capacity.\n"
+  
+  utter_unapproved_events:
+    - text: "All bars including those in restaurants and hotels will remain closed. \n
+      Gym and Swimming pools remain closed.\n"
+  
+  utter_gathering_duration:
+    - text: "No time limit was set to most event as long as everyone follows curfew.\n"
+  
+
+#prevention/hygiene.yml  
+  utter_hygiene_policy:
+    - text: "Proprietors of commercial buildings/markets must have facilities that helps to fight COVID-19 
+      like hand sanitizers, water taps, facilities to show marks of social distances and so on.\n
+      Occupants with several services in that specific building must equally have such hygiene 
+      required facilities.\n"
+
+  utter_hygiene_policy_transgression: 
+    - text: "Proprietors of commercial buildings/markets that do not have facilities that help to fight 
+      COVID-19 like hand sanitizers, water taps, facilities to show marks of social distances and 
+      so on will pay Rwf 300,000 fines.\n
+      Occupants with several services in that specific building will pay Rwf 50,000 if they equally 
+      don’t have such hygiene required facilities and may be closed for up to 3 months.\n"
+
+  utter_covid_transmission:
+    - text: "COVID-19 is mainly transmitted through contact with respiratory droplets from the nose 
+      or mouth and can spread from person-to-person when a person with COVID-19 coughs 
+      or exhales.\n
+      Droplets may land on objects or surfaces around an infected person and others may catch 
+      COVID-19 when touching objects or surfaces, followed by touching their eyes, nose or mouth.\n
+      It is possible for the virus to spread before exhibiting symptoms, however people are 
+      most contagious when they are symptomatic.\n"
+
+
+#prevention/masks.yml
+  utter_mask_policy:
+    - text: "Masks must be worn properly in public at all times. Except when eating or drinking.\n"
+  
+  utter_mask_policy_transgression:
+    - text: "The fines ranges from Rwf 10,000 for not wearing a face mask and more, to somewhere 
+      between rwf 100,000 and rwf 1,000,000 over failure to respect guidelines at a construction 
+      site with possibility of seeing the activities halted for one month..\n
+      And may be sent to an appropriate venue where they might spend up to 24 hours, to learn 
+      the measures intended to fight against COVID-19.\n
+      A child of more than 2 years old who is not wearing a face mask will also be fined 
+      with Rwf 10,000. The parent or guardian will pay the cost.\n"
+  
+
+#prevention/otherPolicies.yml
+  utter_payment_policy:
+    - text: "All traders are required to accept digital payments as an alternative form of payment.\n"
+
+  utter_payment_policy_transgression:
+    - text: "A Rwf 25,000 fine may be charged to someone how refuses to be paid electronically. 
+      In this case, one may also be sent to a place where violators are taught to respect the 
+      measures where they can spend up to 24 hours.\n"
+  
+
+#prevention/privateTransportation.yml
+  utter_private_transport_carriage_limit:
+    - text: "There is no carriage limit for private transport anymore.\n"
+  
+  utter_private_transport_curfew_pass:
+    - text: "If a driver needs to drive/move after curfew for a legitimate reason, he may request a 
+    pass.\n"
+  
+  utter_private_transport_curfew_transgression:
+    - text: "The driver's vehicule is confiscated temporally along with a fine.\n"
+  
+  utter_private_transport_mask_policy:
+    - text: "Masks must be worn properly in public at all times. Except when eating or driking\n"
+  
+  utter_private_transport_distance_policy:
+    - text: "Social distance also applies in a car and failure to respect it attract Rwf 25000 fine and 
+      a possible confiscation of the car for five days.\n"
+
+
+#prevention/publicTransportation.yml
+  utter_public_transport_policy: 
+    - text: "Domestic travel are open throughout the entire country.\n"
+
+  utter_public_transport_carrriage_limit:
+    - text: "Public transportation will continue with buses operating at full capacity for seated passengers 
+      and at 50% for standing passengers.\n
+      Bicycle taxis (Abanyonzi) will resume in permitted areas of operation in accordance with
+       COVID-19 preventive measures as well as other precautionary safety measures including 
+       wearing helmets.\n
+      Motos are permitted to carry passengers except in areas under lockdown. Strict hygiene must 
+      be observed and masks worn at all times.\n
+      Arriving and departing passengers at Kigali International airport must present a negative 
+      COVID -19 PCR test taken within 120 hours prior to departure and should comply with 
+      health guidelines.\n"
+   
+  utter_public_transport_curfew_transgression:
+    - text: "The driver's vehicule is confiscated temporally along with a fine.\n"
+  
+  utter_public_transport_mask_policy:
+    - text: "Masks must be worn properly in public at all times. Except when eating or driking.\n"
+
+  utter_motocycle_policy_transgression:
+    - text: "All malpractices related to moto transport-moto rider without hand sanitizers or moto rider 
+      with a commuter who does not wear something inside the helmet will result with the driver 
+      being charged a Rwf 25000 fine\n
+      On top of the fine, the moto would be confiscated for 5 days.\n"
+  
+
+#prevention/symptoms.uml
+  utter_covid_symptoms:
+    - text: "The two most common symptoms are fever (88 percent) and dry cough (68 percent).\n
+      Approximately one in five may become more seriously ill and have difficulty in breathing.\n
+      Emergency symptoms include difficulty breathing, persistent chest pain or pressure, sudden 
+      confusion, difficulty waking, and bluish face or lips.\n
+      Further development of the disease can lead to complications including pneumonia, acute 
+      respiratory distress syndrome, sepsis, septic shock, and kidney failure.\n
+      The likely order of initial symptoms of the COVID-19 disease is a fever followed by a cough 
+      and muscle pain, and that nausea and vomiting usually appear before diarrhoea. 
+      This contrasts with the most common path for influenza where it is common to develop a 
+      cough first and fever later\n"
+
+
+#prevention/testing.uml
+  utter_covid_testing_locations:
+    - text: "Diagnostic testing is currently being conducted in public health laboratories with a test kit. 
+      Some mobile units are usually available in areas where risk of infection are high.\n"
+  
+  utter_covid_diagnosis:
+    - text: "If you develop symptoms including fever, cough, and/or difficulty breathing, and have been 
+      in close contact with a person known to have COVID-19 or have recently traveled to an area 
+      with ongoing spread, stay home and contact your nearest health facility or call our toll-free 
+      number 114. A healthcare professional will determine if you have signs and symptoms 
+      COVID-10 and whether you should be tested.\n"
+  
+  utter_covid_testing_duration:
+    - text: "Results are usually available within 24 hours after submitting a sample\n"
+  
+  utter_covid_test_requirement:
+    - text: "Any person showing sign and symptoms of covid is tested.\n"
+  
+  utter_covid_test_type:
+    - text: "A SARS-CoV 2 Real Time Polymerase Chain Reaction (RT-PCR) test from an accredited 
+      laboratory is the only test accepted by the Rwandan authorities for official purposes but 
+      other tests, such as Rapid Diagnostics Test (RDTs), may be used by doctors to acess a 
+      patient's condition.\n"
+  
+  utter_covid_test_SARS-Cov:
+    - text: "The standard test for presence of SARS-CoV-2 uses RNA testing of respiratory secretions 
+      collected using a nasopharyngeal swab, though it is possible to test other samples.\n
+       This test uses real-time rRT-PCR which detects the presence of viral RNA fragments.\n
+      As this test detects RNA but not infectious virus, its ability to determine duration of 
+      infectivity of patients is limited.\n
+      Positive tests have been shown not to correlate with future excess deaths.\n"
+  
+  utter_covid_test_RDT:
+    - text: " Rapid Diagnostics Test\n"

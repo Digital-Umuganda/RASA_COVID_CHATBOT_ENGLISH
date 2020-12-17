@@ -1,0 +1,29 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for information about private transport carriage limit
+  steps:
+  - intent: ask_private_transport_carriage_limit
+  - action: utter_private_transport_carriage_limit
+
+- story: looking for information about private transport curfew pass
+  steps:
+  - intent: ask_private_transport_curfew_pass
+  - action: utter_private_transport_curfew_pass
+
+- story: looking for information about private transport curfew transgression
+  steps:
+  - intent: ask_private_transport_curfew_transgression
+  - action: utter_private_transport_curfew_transgression
+
+- story: looking for information about private transport mask policy
+  steps:
+  - intent: ask_private_transport_mask_policy
+  - action: utter_private_transport_mask_policy
+
+- story: looking for information about private transport distance policy
+  steps:
+  - intent: ask_private_transport_distance_policy
+  - action: utter_private_transport_distance_policy

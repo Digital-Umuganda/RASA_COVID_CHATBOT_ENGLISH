@@ -1,0 +1,19 @@
+
+version: "2.0"
+
+stories:
+
+- story: looking for information about housecare quarantine policy
+  steps:
+  - intent: ask_home_patient_quarantine_policy
+  - action: utter_home_patient_quarantine_policy
+
+- story: looking for information about housecare quarantine process
+  steps:
+  - intent: ask_home_patient_quarantine_process
+  - action: utter_home_patient_quarantine_process
+
+- story: looking for information about housecare quarantine emergency
+  steps:
+  - intent: ask_home_patient_quarantine_emergency
+  - action: utter_home_patient_quarantine_emergency

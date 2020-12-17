@@ -5,9 +5,37 @@ stories:
 
 - story: looking for information about weeding attendance limit
   steps:
-  - intent: ask_allowed_gatherings
+  - intent: ask_weeding_attendance_limit
     entities: 
     - place
   - slot_was_set:
     - place: weeding
   - action: utter_weeding_attendance_limit
+
+- story: looking for information about weeding allowed ceremonies
+  steps:
+  - intent: ask_weeding_allowed_ceremonies
+    entities: 
+    - place
+  - slot_was_set:
+    - place: weeding
+  - action: utter_weeding_allowed_ceremonies
+
+- story: looking for information about weeding ceremony policy
+  steps:
+  - intent: ask_weeding_ceremony_policy
+    entities: 
+    - place
+  - slot_was_set:
+    - place: weeding
+  - action: utter_weeding_ceremony_policy
+
+  
+- story: looking for information about weeding ceremonies policy transgression
+  steps:
+  - intent: ask_weeding_policy_transgression
+    entities: 
+    - place
+  - slot_was_set:
+    - place: church
+  - action: utter_weeding_policy_transgression

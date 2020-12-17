@@ -2,32 +2,63 @@
 version: "2.0"
 
 intents:
-- ask_traveler:
-    use_entities:
-      - travel
-      - time
+- ask_traveler_quaratine_hotel_cost
+- ask_hotel_services_travelers
+- ask_traveler_curfew_policy
+- ask_traveler_mask_policy
+- ask_traveler_testing_facilities
+- ask_traveler_testing_process
+- ask_traveler_requirement
+- ask_travel_availability
+- ask_traveler_quarantine
 
 
 responses:
 #travelling/travelers.yml
   utter_traveler_curfew_policy:
-  - text: "If a traveler arrives/depart in/from Rwanda after curfew they may request a pass for someone to drive them at/to the airport or contact the hotel they are staying in to handle transportation from the airport"
+    - text: "If a traveler arrives/depart in/from Rwanda after curfew they may request a pass 
+      for someone to drive them at/to the airport or contact the hotel they are staying in 
+      to handle transportation from the airport\n"
+  
+  utter_traveler_mask_policy:
+    - text: "Masks must be worn properly in public at all times.\n"
   
   utter_traveler_testing_facilities:
-  - text: "At Remera Petit stade."
-  - text: "And at Gikondo Juakali."
+    - text: "At Remera Petit stade.\n
+      And at Gikondo Juakali.\n"
+  
+  utter_traveler_testing_process:
+    - text: "- Book a test on Irembo platform\n
+      - Pay for the test 60$ or Rwf 57,300 through mobile money or bank deposit using the Bill ID 
+      provided by Irembo\n
+      - Take the test at the provided test center and time, you'll be given your test ID to track and 
+      print your test certificate on RBC website Step\n
+      - If the test results are negative Receive the PCR certificate by entering the test ID number 
+      on RBC website\n"
   
   utter_traveler_requirement:
-  - text: "Incoming passengers are required to fill in a passenger locator form on RBC website."
-  - text: "Arriving and departing passengers at Kigali International airport must present a negative COVID -19 PCR test taken within 120 hours prior to departure and should comply with health guidelines."
-  - text: "Land borders are still closed until further notice."
+    - text: "Incoming passengers are required to fill in a passenger locator form on RBC website.\n
+      Arriving and departing passengers at Kigali International airport must present a negative 
+      COVID -19 PCR test taken within 120 hours prior to departure and should comply with 
+      health guidelines.\n
+      Land borders are still closed until further notice.\n"
   
   utter_traveler_quarantine:
-  - text: "Once in Rwanda a second test will be administered and will be hosted in a transit hotel for 24 hours."
-  - test: "If the test results are negative the passenger is free to continue, if the test results are positive medical team will admit the passenger to home based care or treatment center based on their assessment."
+    - text: "Once in Rwanda a second test will be administered and will be hosted in a transit hotel 
+      for 24 hours.\n
+      If the test results are negative the passenger is free to continue, if the test results are positive 
+      medical team will admit the passenger to home based care or treatment center based 
+      on their assessment.\n
+      We encourage all travelers to have international travel insurance\n"
+  
+  utter_travel_availability:
+    - text: "Rwanda is one of the few african countries where flights can depart and arrive from most 
+      countries around the world.\n"
 
 
 #travelling/quaratineHotels.yml
-  utter_traveler_quarantine_hotel_cost:
-  - text: "The Government of Rwanda has negotiated special rates at designated transit hotels for the 24 hour waiting period."
-  - text: "Should a guest wish to remain in the hotel after receiving negative test results, they are welcome to extend their stay at the hotel’s applicable rates."
+  utter_traveler_quaratine_hotel_cost:
+    - text: "The Government of Rwanda has negotiated special rates at designated transit hotels for the 
+      24 hour waiting period.\n
+      Should a guest wish to remain in the hotel after receiving negative test results, they are 
+      welcome to extend their stay at the hotel’s applicable rates.\n"

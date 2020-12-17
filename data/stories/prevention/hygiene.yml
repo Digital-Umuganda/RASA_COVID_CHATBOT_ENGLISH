@@ -5,9 +5,19 @@ stories:
 
 - story: looking for information on how covid is transmitted
   steps:
-  - intent: ask_covid
+  - intent: ask_covid_transmission
     entities: 
     - place
   - slot_was_set:
     - place: transmission
   - action: utter_covid_transmission
+
+- story: looking for information about hygiene policy
+  steps:
+  - intent: ask_hygiene_policy
+  - action: utter_hygiene_policy
+
+- story: looking for information about hygiene policy transgression
+  steps:
+  - intent: ask_hygiene_policy_transgression
+  - action: utter_hygiene_policy_transgression

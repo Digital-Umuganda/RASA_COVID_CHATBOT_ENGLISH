@@ -5,7 +5,7 @@ stories:
 
 - story: looking for information about work-out facilities
   steps:
-  - intent: ask_allowed_gatherings
+  - intent: ask_workOut_policy
     entities: 
     - place
   - slot_was_set:

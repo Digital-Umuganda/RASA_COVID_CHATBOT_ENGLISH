@@ -6,9 +6,19 @@ stories:
 
 - story: looking for information about hotel open/locked facilities
   steps:
-  - intent: ask_allowed_gatherings
+  - intent: ask_hotel_open_facilities
     entities: 
     - place
   - slot_was_set:
     - place: hotel
   - action: utter_hotel_open_facilities
+
+
+- story: looking for information about hotel allowed events
+  steps:
+  - intent: ask_hotel_allowed_events
+    entities: 
+    - place
+  - slot_was_set:
+    - place: hotel
+  - action: utter_hotel_allowed_events

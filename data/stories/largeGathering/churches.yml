@@ -5,9 +5,27 @@ stories:
 
 - story: looking for information about events allowed to be held in a church
   steps:
-  - intent: ask_allowed_gatherings
+  - intent: ask_church_allowed_events
     entities: 
     - place
   - slot_was_set:
     - place: church
   - action: utter_church_allowed_events
+
+- story: looking for information about attendance limit in a church
+  steps:
+  - intent: ask_church_attendance_limit
+    entities: 
+    - place
+  - slot_was_set:
+    - place: church
+  - action: utter_church_attendance_limit
+
+- story: looking for information about attendance rules in a church
+  steps:
+  - intent: ask_church_attendance_rules
+    entities: 
+    - place
+  - slot_was_set:
+    - place: church
+  - action: utter_church_attendance_rules

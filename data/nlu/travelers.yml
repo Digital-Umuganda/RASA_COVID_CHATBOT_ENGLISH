@@ -3,38 +3,67 @@ version: "2.0"
 
 nlu:
 
-- intent: ask_traveler
-  example: |
-    - will I be [quarantined](travel) when I arrive to Rwanda?
-    - how long is the [quarantine](travel)?
-    - will I be [tested](travel) again upon arrival?
-    - where is the [quarantine](travel) held for travelers?
-    - what will happen after the [quarantine](travel) period?
-    - what will happen if I [test](travel) positive?
-    - can I [travel](travel) outside the country?
-    - can I [travel](travel) outside kigali?
-    - is it okay to [travel](travel) outside the country?
-    - can we [travel](travel) outside the country?
-    - which countries can I [travel](travel) to?
+
+- intent: ask_traveler_quaratine_hotel_cost
+  examples: |
+    - do you offer discounts on [hotels](place) during quarantine?
+    - is the price of [hotels](place) for travelers the same as other clients?
+
+- intent: ask_hotel_services_travelers
+  examples: |
+    - can choose which [hotel](travel) I am staying in during quarantine?
+    - what can I do in the [hotel](travel) I am staying in during quarantine?
+
+- intent: ask_traveler_curfew_policy
+  examples: |
+    - how can I [travel](travel) if my [flight](travel) is after [curfew](time)?
+    - how do I drive home if my [flight](travel) is arriving [at 2 am](time)
+
+- intent: ask_traveler_mask_policy
+  examples: |
+    - Do I have to wear a [mask](policy) inside a [plane](place)
+    - is it mandatory to wear a [mask](policy) when sleeping in a [plane](place)
+
+- intent: ask_traveler_testing_facilities
+  examples: |
+    - where do travelers get [tested](travel) after arrival?
+    - where can I get [tested](travel) before travelling?
+
+- intent: ask_traveler_testing_process
+  examples: |
     - how can I get [tested](travel) before a flight?
-    - how can I [travel](travel) if my flight is after [curfew](time)?
+    - what happens after I get [tested](travel)?
+    - what will happen if I [test](travel) positive?
+    - will I be [tested](travel) again upon arrival?
+
+- intent: ask_traveler_requirement
+  examples: |
+    - what is the required process involved in out of the country [travel](travel)?
+    - what do I need to [travel](travel) outside the country?
+    - what do I need to do in order to [travel](travel)?
     - what process do I need to follow to [travel](travel) outside the country?
     - what process do I need to complete to [travel](travel) outside the country?
     - what is the process do I need to follow to [travel](travel) outside the country?
-    - what do I need to [travel](travel) outside the country?
-    - what do I need to do in order to [travel](travel)?
-    - what is the required process involved in out of the country [travel](travel)?
-    - what [hotels](travel) can I stay in during quarantine?
+
+- intent: ask_travel_availability
+  examples: |
+    - where can I find more [help](travel)? about travelling
+    - can we [travel](travel) outside the country?
+    - which countries can I [travel](travel) to?
+    - can I [travel](travel) outside the country?
+    - can I [travel](travel) outside kigali?
+    - is it okay to [travel](travel) outside the country?
+
+- intent: ask_traveler_quarantine
+  examples: |
     - can I get out of the [hotel](travel) during quarantine?
-    - do you offer discounts on [hotels](travel) during quarantine?
-    - can choose which [hotel](travel) I am staying in during quarantine?
-    - what can I do in the [hotel](travel) I am staying in during quarantine?
-    - where do travelers get [tested](travel) after arrival?
-    - what happens after I get [tested](travel)?
-    - where can I get [tested](travel) before travelling?
+    - what [hotels](travel) can I stay in during quarantine?
+    - what will happen after the [quarantine](travel) period?
+    - where is the [quarantine](travel) held for travelers?
+    - how long is the [quarantine](travel)?
+    - will I be [quarantined](travel) when I arrive to Rwanda?
     - what happens if I am [transiting](travel) in Rwanda?
-    - where can I get more [help](travel)?
-    - where can I find more [help](travel)?
+
 
 - synonym: quarantine
   examples: |

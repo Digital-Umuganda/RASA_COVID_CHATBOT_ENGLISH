@@ -5,34 +5,61 @@ stories:
 
 - story: looking for information about travelers curfew policy
   steps:
-  - intent: ask_traveler
+  - intent: ask_traveler_curfew_policy
     entities: 
     - time
   - slot_was_set:
     - time: curfew
   - action: utter_traveler_curfew_policy
 
+- story: looking for information about travelers mask policy
+  steps:
+  - intent: ask_traveler_mask_policy
+    entities: 
+    - travel
+  - slot_was_set:
+    - travel: testing
+  - action: utter_traveler_mask_policy
+
 - story: looking for information about travelers testing facilities
   steps:
-  - intent: ask_traveler
+  - intent: ask_traveler_testing_facilities
     entities: 
     - travel
   - slot_was_set:
     - travel: testing
   - action: utter_traveler_testing_facilities
 
+- story: looking for information about travelers testing process
+  steps:
+  - intent: ask_traveler_testing_process
+    entities: 
+    - travel
+  - slot_was_set:
+    - travel: process
+  - action: utter_traveler_testing_process
+
 - story: looking for information about travelers requirements
   steps:
-  - intent: ask_traveler
+  - intent: ask_traveler_requirement
     entities: 
     - travel
   - slot_was_set:
     - travel: travel
   - action: utter_traveler_requirement
 
+- story: looking for information about travel availability
+  steps:
+  - intent: ask_travel_availability
+    entities: 
+    - travel
+  - slot_was_set:
+    - travel: travel
+  - action: utter_travel_availability
+
 - story: looking for information about travelers quatantine
   steps:
-  - intent: ask_traveler
+  - intent: ask_traveler_quarantine
     entities: 
     - travel
   - slot_was_set:

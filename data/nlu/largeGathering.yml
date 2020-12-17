@@ -3,14 +3,125 @@ version: "2.0"
 
 nlu:
 
-- intent: ask_allowed_gatherings
-  example: |
-    - what [event](place) can I attent to on [weekends](time)?
+
+- intent: ask_church_allowed_events
+  examples: |
     - can I go to [church](place)?
-    - can I attent a [weeding](place)?
-    - am I allowed to go to a [meeting](place) in [Remera](location)?
-    - where can [eat](place) in [Gasabo](location)?
+    - what [ceremonies](event) can I have at [church](place)?
+
+- intent: ask_church_attendance_limit
+  examples: |
+    - how many people can I have at my [church](place)?
+    - what is the [attendance limit](policy) in a [church](place)?
+
+- intent: ask_church_attendance_rules
+  examples: |
+    - are there [rules](policy) to [attend](policy) a [church](place)
+    - are [mask](policy) mandatory inside a [church](place)? 
+
+- intent: ask_funeral_attendance_limit
+  examples: |
+    - how many people can [be at](policy) a [funeral](event)?
+    - what is the [attendance limit](policy) in a [church](place) during a [funeral](event) ceremony?
+
+- intent: ask_funeral_allowed_ceremony
+  examples: |
+    - what [funeral](event) ceremonies are [allowed](policy)?
+    - are [wake](event) [allowed](policy) during [morning](event)?
+
+- intent: ask_funeral_policy_transgression
+  examples: |
+    - what happens is I [exceed](policy) the [number of people](policy) at a [funeral](event)?
+    - is there a fine for [exceeding](policy) the [attendance limit](policy) in [vigil](event)
+
+- intent: ask_public_gathering_policy
+  examples: |
+    - what [event](event) can I [attend](policy) to on [weekends](time)?
+    - can I [go to](policy) a [soccer game](event)?
+
+- intent: ask_public_gathering_attendance_limit
+  examples: |
+    - how many people can I [have at](policy) my [house](place)?
+    - how many people can I [invite](policy) to a [party](event)
+
+- intent: ask_unapproved_events
+  examples: |
+    - what [events](event) can I [host at](policy) a [bar](place)?
+    - what [events](event) are [prohibited](policy)?
+
+- intent: ask_gathering_duration
+  examples: |
+    - for how long can my [meeting](event) last?
+    - is there a [time limit](policy) of how long an [event](event) can last?
+
+- intent: ask_hotel_open_facilities
+  examples: |
+    - can I go to a [hotel](place) [swimming pool](place)?
+    - can I workout at a [hotel](place) [gym](place)
+
+- intent: ask_hotel_allowed_events
+  examples: |
+    - is it ok to [go to](policy) a [hotel](place)?
+    - what events can I [host at](policy) a [hotel](place)?
+
+- intent: ask_market_policy
+  examples: |
+    - where can I [go](policy) [shopping](place)
+    - are [supermakets](place) [open](policy)?
+
+- intent: ask_meeting_attendance_limit
+  examples: |
+    - how many people can I [have at](policy) my [meeting](event)?
+    - how many people can I [have in](policy) an [office](place) [meeting](event)?
+    - can I add a few people to the [attendance limit](policy) of a [meeting](event)?
+
+- intent: ask_meeting_requirement
+  examples: |
+    - am I allowed to [go to](policy) a [meeting](event) in [Remera](location)?
+    - what are the requirements of [hosting](policy) a [meeting](event)
+
+- intent: ask_restaurant_allowed_services
+  examples: |
+    - where can [eat](event) in [Gasabo](location)?
+    - what events can I have at [restaurant](place)?
+
+- intent: ask_restaurant_attendance_limit
+  examples: |
+    - how many people can you [receive](policy) at a [restaurant](place)
+    - is there a [limit](policy) to how many clients I can [receive](policy) at a [restaurant](place)
+
+- intent: ask_restaurant_hygiene_policy
+  examples: |
+    - what are the [requirements](policy) to open a [restaurant](place)?
+    - what are the [preventive measure](policy) a [restaurant](place) must follow?
+
+- intent: ask_school_attendance
+  examples: |
+    - when can I [go to](policy) [school](place) again
+    - is there a limit to how many student can [attend](policy) a [classroom](place)
+
+- intent: ask_weeding_attendance_limit
+  examples: |
+    - how many people can [attend](policy) a [weeding](event)
+    - are the musicians included in a the [number of people](policy) that can [attend](policy) a [weeding](event)
+
+- intent: ask_weeding_allowed_ceremonies
+  examples: |
+    - what [ceremonies](event) can I have at a [weeding](event)?
+    - are [weeding](event) [allowed](policy)?
+
+- intent: ask_weeding_ceremony_policy
+  examples: |
+    - can I attent a [weeding](event)?
+    - what are the [guidelines](policy) to follow at a [weeding](event)?
+
+- intent: ask_weeding_policy_transgression
+  examples: |
+    - what happens if I [host](policy) a little [more people](policy) than the limit at a [weeding](event)?
+    - what if I remove my [mask](policy) at my [weeding](event)
+    - what's the fine for not wearing a [mask](policy) at a [weeding](event)?
+
+- intent: ask_workOut_policy
+  examples: |
     - are [gyms](place) opened?
-    - is it ok to go to a [hotel](place)?
-    - how many people can attend a [weeding](place)
-    - how many people can you receive at a [restaurant](place)
+    - can I [go for](policy) a [run](event) [outside](place)?

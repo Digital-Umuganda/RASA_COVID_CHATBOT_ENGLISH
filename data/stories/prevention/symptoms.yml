@@ -5,7 +5,7 @@ stories:
 
 - story: looking for information about covid symptoms
   steps:
-  - intent: ask_covid
+  - intent: ask_covid_symptoms
     entities: 
     - covid
   - slot_was_set:

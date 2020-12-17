@@ -5,9 +5,65 @@ stories:
 
 - story: looking for information about testing locations
   steps:
-  - intent: ask_covid
+  - intent: ask_covid_testing_locations
     entities: 
     - place
   - slot_was_set:
     - place: test
   - action: utter_covid_testing_locations
+
+- story: looking for information about covid diagnosis
+  steps:
+  - intent: ask_covid_diagnosis
+    entities: 
+    - place
+  - slot_was_set:
+    - place: testing
+  - action: utter_covid_diagnosis
+
+- story: looking for information about covid test duration
+  steps:
+  - intent: ask_covid_testing_duration
+    entities: 
+    - place
+  - slot_was_set:
+    - place: testing
+  - action: utter_covid_testing_duration
+
+- story: looking for information about covid test requirement
+  steps:
+  - intent: ask_covid_test_requirement
+    entities: 
+    - place
+  - slot_was_set:
+    - place: testing
+  - action: utter_covid_test_requirement
+
+- story: looking for information about covid test types
+  steps:
+  - intent: ask_covid_test_type
+    entities: 
+    - place
+  - slot_was_set:
+    - place: test
+  - action: utter_covid_test_type
+
+- story: looking for information about the covid SARS COV test
+  steps:
+  - intent: ask_covid_test_SARS-Cov
+    entities: 
+    - place
+  - slot_was_set:
+    - place: testing
+    - testType: SARS-Cov
+  - action: utter_covid_test_SARS-Cov
+
+- story: looking for information about the covid RDT test
+  steps:
+  - intent: ask_covid_test_RDT
+    entities: 
+    - place
+  - slot_was_set:
+    - place: test
+    - testType: RDT
+  - action: utter_covid_test_RDT

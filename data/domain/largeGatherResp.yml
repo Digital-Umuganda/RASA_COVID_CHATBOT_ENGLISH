@@ -2,67 +2,153 @@
 version: "2.0"
 
 intents:
-- ask_allowed_gatherings:
-    use_entities: 
-      - place
-      - location
-      - time
+- ask_church_allowed_events
+- ask_church_attendance_limit
+- ask_church_attendance_rules
+- ask_funeral_attendance_limit
+- ask_funeral_allowed_ceremony
+- ask_funeral_policy_transgression
+- ask_public_gathering_policy
+- ask_public_gathering_attendance_limit
+- ask_unapproved_events
+- ask_gathering_duration
+- ask_hotel_open_facilities
+- ask_hotel_allowed_events
+- ask_market_policy
+- ask_meeting_attendance_limit
+- ask_meeting_requirement
+- ask_restaurant_allowed_services
+- ask_restaurant_attendance_limit
+- ask_restaurant_hygiene_policy
+- ask_school_attendance
+- ask_weeding_attendance_limit
+- ask_weeding_allowed_ceremonies
+- ask_weeding_ceremony_policy
+- ask_weeding_policy_transgression
+- ask_workOut_policy
 
 
 responses:
 #largeGathering/churches.yml
   utter_church_allowed_events:
-  - text: "Weedings, funerals are allowed as long as their do not execeed 75 people."
-  - text: "Masses are allowed only if the church is following COVID19 preventive measures and has been allowed to operate by Minaloc."
-  - text: "Services at places of worship will host up to 50% of venue capacity."
+    - text: "Weedings, funerals are allowed as long as their do not execeed 75 people.\n
+      Masses are allowed only if the church is following COVID19 preventive measures and 
+      has been allowed to operate by Minaloc.\n
+      Services at places of worship will host up to 50% of venue capacity.\n"
+
+  utter_church_attendance_limit:
+    - text: "Churches can only receive 50% of their maximum capacity.\n"
+  
+  utter_church_attendance_rules:
+    - text: "Churches are obliged to comply to COVID19 prevention measures.\n
+      And it is recommended that their host events in open air when possible.\n"
+  
+
+#largeGathering/schoolsAndWork.yml
+  utter_school_attendance:
+    - text: "Schools will resume with a gradual reopening in the coming weeks based on levels of 
+      education. The Ministry of Education and The Ministry of Health will continue to ensure 
+      safe reopening of schools.\n
+      5th and 6th primary and high school institutions as well as universities with the permission 
+      from MINEDUC are open.\n
+      Offices of public and private institutions will operate at 50% capacity. Other employees will 
+      continue working from home on a rotational basis.\n"
+  
 
 #largeGathering/markets.yml
   utter_market_policy:
-  - text: "Malls and markets will operate at 50% capacity with vendors working on a rotational basis."
+    - text: "Malls and markets will operate at 50% capacity with vendors working on a rotational 
+      basis.\n"
 
 
 #largeGathering/funerals.yml
   utter_funeral_attendance_limit:
-  - text: "Funerals are allowed as long as their do not execeed 75 people in church and cimeteries gathering."
-  - text: "And 15 people in wake/vigil at any one time."
+    - text: "Funerals are allowed as long as their do not execeed 75 people in church and cimeteries 
+      gathering.\n
+      And 15 people in wake/vigil at any one time.\n"
+  
+  utter_funeral_allowed_ceremony:
+    - text: "All funeral ceremonies are allowed as long as their respect COVID19 prevention measures 
+      and attendance limits.\n"
   
   utter_funeral_policy_transgression:
-  - text: "The cemetery service officials will pay a fine of Rwf 25,000 if they allow an exceeding number of people who are allowed at a burial ceremony."
+    - text: "The cemetery service officials will pay a fine of Rwf 25,000 if they allow an exceeding number 
+      of people who are allowed at a burial ceremony.\n"
 
-#largeGathering/hotels.yml  
+#largeGathering/hotels.yml
+  utter_hotel_services_travelers:
+    - text: "Hotels may request a curfew pass and transportation for travelers who must travel after curfew\n
+      All bars including those in restaurants and hotels will remain closed.\n"
+  
   utter_hotel_open_facilities:
-  - text: "Most facilities are opened for hotel clients if the appropriate COVID19 prevention measures can be put in place but these facilities remain closed to the public."
+    - text: "Most facilities are opened for hotel clients if the appropriate COVID19 prevention measures 
+      can be put in place but these facilities remain closed to the public.\n"
+  
+  utter_hotel_allowed_events:
+    - text: "Hotels may hold gathering event if the appropriate COVID19 prevention measures can be 
+      put in place\n"
   
 
 
 #largeGathering/meetings.yml
   utter_meeting_attendance_limit:
-  - text: "Mass gathering are prohibited except with special permission and events must not exceed 30% of venue capacity. Applications to host essential events will be granted by local authorities and RDB upon fulfillment of health requirements."
+    - text: "Mass gathering are prohibited except with special permission and events must not exceed 
+      30% of venue capacity. Applications to host essential events will be granted by local 
+      authorities and RDB upon fulfillment of health requirements.\n"
   
   utter_meeting_requirement:
-  - text: "Participants in meetings and conferences will not require proof of COVID – 19 tests however, event organizers must comply with health guidelines and must not exceed 50% of venue capacity."
-  - text: "Event organizers including conferences and meetings must comply with all COVID – 19 preventive measures."
+    - text: "Participants in meetings and conferences will not require proof of COVID – 19 tests however, 
+      event organizers must comply with health guidelines and must not exceed 50% of venue 
+      capacity.\n
+      Event organizers including conferences and meetings must comply with all COVID – 19 
+      preventive measures.\n"
   
 
 
 #largeGathering/restaurants.yml
   utter_restaurant_allowed_services:
-  - text: "All bars including those in restaurants and hotels will remain closed."
+    - text: "All bars including those in restaurants and hotels will remain closed.\n"
 
   utter_restaurant_attendance_limit:
-  - text: "As long as restaurant respect distancing rules, they are free to operate at 50% of the venue capacity."
+    - text: "As long as restaurant respect distancing rules, they are free to operate at 50% of the 
+      venue capacity.\n"
 
   utter_restaurant_hygiene_policy:
-  - text: "The proprietors of commercial buildings will have to pay Rwf 300,000 fine."
-  - text: "And the restaurant(if they are renting the building) will pay Rwf 50,000 if they equally don’t have such hygiene required facilities and may be closed for up to 3 months."
+    - text: "The proprietors of commercial buildings will have to pay Rwf 300,000 fine.\n
+      And the restaurant(if they are renting the building) will pay Rwf 50,000 if they equally 
+      don’t have such hygiene required facilities and may be closed for up to 3 months.\n"
 
 
 #largeGathering/weedings.yml
   utter_weeding_attendance_limit:
-  - text: "Church wedding ceremonies should not exceed 75 persons."
+    - text: "Church wedding ceremonies should not exceed 75 persons.\n"
   
+  utter_weeding_allowed_ceremonies:
+    - text: "Weedings may perfom church ceremonies with less than 75 persons.\n
+      Weedings may perfom civil mariage ceremonies with less than 15 persons.\n
+      Mass gathering are prohibited except with special permission and events must not 
+      exceed 30% of venue capacity. Applications to host essential events will be granted 
+      by local authorities and RDB upon fulfillment of health requirements.\n"
+  
+  utter_weeding_ceremony_policy:
+    - text: "COVID – 19 tests will not be required for wedding receptions with fewer than 75 guests. 
+      However, the public is encouraged to take advantage of COVID – 19 voluntary testing 
+      facilities as a preventive measure.\n"
+  
+  utter_weeding_policy_transgression:
+    - text: "Civil wedding and the marriage ceremony are not allowed to have 15 and 30 participants 
+      respectively.\n
+      Thus, beyond that number, the person officiating will pay Rwf 25,000 fine for every extra 
+      person.\n
+      In case it is a church, it will be closed.\n
+      In case of a civil wedding, the officer can be submitted to administrative/disciplinary 
+      sanctions.\n
+      Opening, and holding a service without authorization will attract a fine of Rwf 150,000, 
+      but even if they are allowed, failure to respect COVID-19 measures, a fine of Rwf 100,000 
+      will apply.\n"
+
 
 #largeGathering/workOuts.yml
   utter_workOut_policy:
-  - text: "Non-contact outdoor sports are permitted however gyms shall remain closed."
-  - text: "Gym and Swimming pools remain closed."
+    - text: "Non-contact outdoor sports are permitted however gyms shall remain closed.\n
+      Gym and Swimming pools remain closed.\n"
